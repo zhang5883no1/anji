@@ -1,0 +1,341 @@
+/*
+1st PART - common config
+2nd PART - main layout
+3rd PART - content
+4th PART - form
+5th PART - Others
+*/
+/*
+1st PART - common config
+*/
+
+A {
+    TEXT-DECORATION: underline;
+}
+A:link {
+	COLOR: #012267;
+	TEXT-DECORATION: underline;
+}
+A:visited {
+	COLOR: #012267;
+	TEXT-DECORATION: underline;
+}
+A:hover {
+	COLOR: #FF9900;
+	TEXT-DECORATION; underline;
+}
+
+input {
+	FONT-SIZE: 11px;
+	FONT-family: "Arial", "宋体", "SimSun";
+	color: #333399;
+	border: 1px #A8B4CB double;
+	BACKGROUND: #FCFCFC;
+	height : 20px;
+	margin: 0px;
+	padding-BOTTOM: 0px;
+	padding-LEFT: 2px;
+	padding-RIGHT: 2px;
+	padding-TOP:0px;
+}
+select {
+	FONT-SIZE: 11px;
+	FONT-family: "Arial", "宋体", "SimSun";
+	color: #333399;
+	background-color: #FCFCFC;
+	BORDER: #A8B4CB 1px solid;
+	height: 20px;
+	padding-BOTTOM: 0px;
+	padding-LEFT: 2px;
+	padding-RIGHT: 0px;
+	padding-TOP:0px;
+}
+
+/*
+2nd PART - main layout
+*/
+
+
+
+/*
+3rd PART - content
+*/
+
+TABLE {
+     FONT-FAMILY: "Arial", "宋体", "SimSun";  
+	 FONT-SIZE: 9pt; 
+	 COLOR: #000000; 
+	 FONT-WEIGHT: NORMAL;
+}
+TABLE.listtable {
+	FONT-FAMILY: "Arial", "宋体", "SimSun";
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	background-color: #FFFFFF;
+    border-collapse: collapse;
+	text-align: center;
+}
+TABLE.listtable th {
+	height: 19px;
+	background-color: #D8E0F5;
+	color: #012267;
+	text-align: center;
+	vertical-align: middle;
+}
+TABLE.listtable th.check {
+	width: 15px;
+}
+TABLE.listtable tr.odd {
+	height: 19px;
+	background-color: #F5F5F5;
+	text-align: left;
+}
+TABLE.listtable tr.even {
+      height: 19px;
+	  background-color: #E8E8E8;
+	  text-align: left;
+}
+TABLE.listtable tr.trlist2
+{
+      height: 19px;
+	  background-color: #C9C9DD;
+	text-align: left;
+}
+
+TABLE.listtable td {
+	  text-align: center;
+}
+
+TABLE.listtable td.number {
+	  text-align: right;
+}
+TABLE.listtable th.trtitle
+{
+      background-color: #B9C9F3;
+	  height: 19px;
+    	text-align: right;
+	background-image: url(../images/bg-th.gif);
+	background-repeat: no-repeat;
+}
+TABLE.listtable tr.tbtitle {
+	height: 19px;
+	background-color: #B9C9F3;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.trtitle1
+{
+      height: 23px;
+	  background-color: #6699FF;
+	text-align: center;
+}
+
+TABLE.formtable {
+	COLOR: #000000;
+	padding: 5px;	
+}
+
+TABLE.formtable td.labeloptional {
+	line-height: 17px;
+	color: #012267;
+	padding-right: 2px;
+	padding-left: 10px;
+	white-space: nowrap;
+	vertical-align: top;
+	width: 100px;
+	/*background-color: #F5F5F5;*/
+}
+
+
+TABLE.buttonlist {
+	text-align: center;
+	height: 30px;
+}
+
+
+/*
+4th PART - form
+
+*/
+
+
+/*
+5th PART - Others
+*/
+
+fieldset {
+	BORDER-TOP: #A8B4CB 0px;
+	BORDER-LEFT: #A8B4CB 2px;
+	BORDER-RIGHT: #A8B4CB 2px;
+	BORDER-BOTTOM: #A8B4CB 0px;
+
+}
+
+.button {
+	BACKGROUND: #EEEEEE ;     
+	COLOR: #012267;
+	BORDER: #012267 1px solid;
+	CURSOR: hand; 
+    WIDTH: 50px;
+	HEIGHT: 17px;
+}
+
+img.img {
+	border: 0px;
+	vertical-align: middle;
+	cursor: hand;	
+}
+
+TABLE.formtable td.labelrequired {
+	line-height: 17px;
+	color: #012267;
+	padding-right: 2px;
+	padding-left: 10px;
+	white-space: nowrap;
+	vertical-align: top;
+	width: 180px;
+	background-color: #e8f6f9;
+	background-image: url(../images/bg-star.gif);
+	background-repeat: no-repeat;
+}
+TABLE.calendar {
+	COLOR: #000000;
+	background-color: #D8E0F5;
+	padding: 5px;
+	text-align: center;
+}
+
+TABLE.calendar td.active {
+	color: #012267;
+	white-space: nowrap;
+	background-color: #F5F5F5;
+}
+TABLE.buttonlist {
+	text-align: center;
+	height: 50px;
+}
+TABLE.message {
+	text-align: center;
+	height: 50px;
+}
+TABLE td.front {
+	background-color: #D4D4D4;
+	background-image: url(../images/bg-front.gif);
+	background-repeat: repeat-x;
+}
+/*
+4th PART - form
+
+*/
+
+
+INPUT.checkbox{
+padding: 0px;
+margin: 0px;
+border: 0px;
+height : 15px;
+width:15px;
+}
+INPUT.radio{
+padding: 0px;
+margin: 0px;
+border: 0px;
+height : 15px;
+width:15px;
+}
+
+INPUT.required {
+	color: #012267;
+	background-color: #FFFFFF;
+}
+SELECT.required {
+	color: #012267;
+	background-color: #FFFFFF;
+}
+INPUT.optional {
+	color: #012267;
+	BACKGROUND-color: #FFFFFF;
+}
+SELECT.optional {
+	color: #012267;
+	background-color: #FFFFFF;
+}
+TEXTAREA.large{
+	height:160px;
+	width:420px;
+}
+/*
+5th PART - Others
+*/
+
+fieldset {
+	BORDER-TOP: #A8B4CB 0px;
+	BORDER-LEFT: #A8B4CB 2px ;
+	BORDER-RIGHT: #A8B4CB 2px ;
+	BORDER-BOTTOM: #A8B4CB 0px;
+
+}
+legend {
+	background-color: #FFFFFF;
+	color: #A8B4CB;
+	line-height: 25px;
+	padding-left: 0px;
+}
+.button {
+	BACKGROUND: #EEEEEE ;     
+	COLOR: #012267;
+	BORDER: #012267 1px solid;
+	CURSOR: hand; 
+    WIDTH: 50px;
+	HEIGHT: 17px;
+}
+.buttonorder{
+	BACKGROUND: #EEEEEE ;     
+	COLOR: #012267;
+	BORDER: #012267 1px solid;
+	CURSOR: hand; 
+    WIDTH: 90px;
+	HEIGHT: 17px;
+}
+
+.buttonform {
+	BACKGROUND: #EEEEEE;
+	COLOR: #012267;
+	BORDER: #012267 1px solid;
+	CURSOR: hand; 
+    WIDTH: 110px;
+	HEIGHT: 17px;
+}
+
+
+div.content {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 8px;
+	padding-left: 10px;
+	margin-top: -8px;
+	margin-left: 5px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	border-left: 2px Dotted #A8B4CB;
+	cursor: hand;
+}
+div.label {
+	margin-top: 0;
+	margin-bottom: 10px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img.img {
+	border: 0px;
+	vertical-align: middle;
+	cursor: hand;	
+}
+
+.errorstyle{
+ COLOR: red;
+}
+
+

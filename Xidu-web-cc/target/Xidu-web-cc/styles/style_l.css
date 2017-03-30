@@ -1,0 +1,117 @@
+/* CSS Document */
+
+/********** .search first blue_bg **********/
+
+.search_tab td.center2 {
+	text-align: center;	
+}
+.search_tab td.label2 {
+	text-align: right;
+	width: 10%;
+}
+
+/********** search table **********/
+
+
+.data_tab .width_15 {
+	width: 15%;
+}
+
+.data_tab .width_16 {
+	width: 16%;
+}
+
+.data_tab .width_20 {
+	width: 20%;
+}
+
+.data_tab .width_50 {
+	width: 50%;
+}
+
+.data_tab td.number_right, .data_tab th.number_right {
+	text-align: right;
+}
+
+.data_tab th.center, .data_tab td.center {
+	text-align: center;
+}
+
+.page_div .page_info .add2{
+	color: #19486c;
+	background-image: url(../images/add.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+}
+
+.page_div .page_info .pizhu{
+	color: #19486c;
+	background-image: url(../images/pictures_l/pizhu.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+}
+
+.page_div .page_info .xiazai{
+	color: #19486c;
+	background-image: url(../images/pictures_l/download.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+}
+
+/********** download button **********/
+
+.download_link {
+	text-decoration: none;
+	color: #025d7b;
+}
+
+.download_link:hover {
+	color: #eb6100;
+	text-decoration: underline;
+}
+
+.page_div .page_opts ul li {
+	line-height: 18px;	
+}
+
+/********** block window **********/
+
+.block_tab td.center {
+	text-align: center;	
+}
+
+.block_div .title2 {
+	height: 24px;
+	line-height: 24px;
+	margin: 1px;
+	font-weight: bold;
+	color: #025d7b;
+	text-align: center;
+	letter-spacing: 1px;
+	background-image: url(../images/pictures_l/block_title_bg.jpg);
+	background-repeat: repeat-x;
+}
+.star_red {
+	color: #FF0000;
+}
+
+/********** detail **********/
+
+input.text2 {
+	width: 100px;
+	font-size: 12px;
+	color: #4c4c4c;
+	border: 1px solid #638090;
+}

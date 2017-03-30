@@ -1,0 +1,75 @@
+.border-b {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: rgb(204, 204, 204);
+}
+.border-r-black {
+	background-position: right 50%; border-width: 0px 1px 0px 0px; border-style: none none solid; border-color: rgb(204, 204, 204) rgb(51, 51, 51) rgb(204, 204, 204) rgb(204, 204, 204); background-image: url("images/menubg.gif"); background-repeat: repeat-y;
+}
+.border-r-yellow {
+	background-position: right 50%; border-width: 0px 1px 0px 0px; border-style: none none solid; border-color: rgb(204, 204, 204) rgb(51, 51, 51) rgb(204, 204, 204) rgb(204, 204, 204); background-image: url("images/mainbg.gif"); background-repeat: repeat-y;
+}
+.p9black {
+	color: rgb(0, 0, 0); line-height: 20px; font-family: "????"; font-size: 12px;
+}
+.p9orange {
+	color: rgb(255, 102, 0); line-height: 20px; font-family: "????"; font-size: 12px;
+}
+.inputstyle {
+	border: 1px solid rgb(204, 204, 204); color: rgb(255, 102, 0); font-family: "????"; font-size: 12px; background-color: rgb(255, 255, 255);
+}
+.border-t {
+	border-width: 1px 0px; border-style: solid none; border-color: rgb(204, 204, 204);
+}
+.p9gray {
+	color: rgb(153, 153, 153); line-height: 20px; font-family: "????"; font-size: 12px;
+}
+.p9blue {
+	color: rgb(0, 51, 153); line-height: 20px; font-family: "????"; font-size: 12px;
+}
+.p9bpurple {
+	color: rgb(57, 16, 132); line-height: 20px; font-family: "????"; font-size: 12px;
+}
+.qicklink {
+	border: 1px solid rgb(204, 204, 204); color: rgb(102, 102, 102); font-family: "????"; font-size: 12px; background-color: rgb(239, 247, 222);
+}
+a:link {
+	color: rgb(0, 0, 0); line-height: 20px; font-family: "????"; font-size: 12px; text-decoration: none;
+}
+a:visited {
+	color: rgb(0, 0, 0); line-height: 20px; font-family: "????"; font-size: 12px; text-decoration: none;
+}
+a:hover {
+	color: rgb(51, 51, 102); line-height: 20px; font-family: "????"; font-size: 12px; text-decoration: underline;
+}
+a.top:link {
+	color: rgb(255, 102, 0); line-height: 20px; font-family: "????"; font-size: 12px; text-decoration: none;
+}
+a.top:visited {
+	color: rgb(255, 102, 0); font-family: "????"; font-size: 12px;
+}
+a.top:hover {
+	color: rgb(33, 56, 123); font-family: "????"; font-size: 12px; text-decoration: underline;
+}
+.border-r-green {
+	background-position: right 50%; border-width: 0px 1px 0px 0px; border-style: none none solid; border-color: rgb(204, 204, 204) rgb(51, 51, 51) rgb(204, 204, 204) rgb(204, 204, 204); background-image: url("images/u01.gif"); background-repeat: repeat-y;
+}
+.border-b-black {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(0, 0, 0);
+}
+.tablealpha {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.tablealphaCopy {
+	color: rgb(255, 255, 255); font-size: 12px; background-color: rgb(255, 204, 51);
+}
+a.drop:link {
+	color: rgb(255, 255, 255); font-family: "????"; font-size: 12px; text-decoration: none;
+}
+a.drop:visited {
+	color: rgb(255, 255, 255); font-family: "????"; text-decoration: none;
+}
+a.drop:hover {
+	color: rgb(255, 255, 255); font-family: "????"; font-size: 12px; text-decoration: underline;
+}
+.p9white {
+	color: rgb(255, 255, 255); font-family: "????"; font-size: 12px;
+}

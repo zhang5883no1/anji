@@ -1,0 +1,1516 @@
+/*navigation*/
+body{ margin:0; padding:0; }
+.navwrap{
+    height:26px;
+
+	line-height:26px;
+	padding-right:18px;
+	position:absolute;
+
+	font-size:12px;
+	z-index:6;
+	}
+
+#top #nav{
+	float:left;
+	height:26px;
+	line-height:26px;
+	padding-left:13px;
+}
+
+
+#nav, #nav ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	line-height:26px; 
+	z-index:5;
+
+}
+
+
+#top #nav a{
+	height:26px;
+	display:block;
+	padding:0 21px;
+	text-decoration:none;
+	text-align:center;
+	line-height:26px; 
+	outline:none;
+	z-index:35;
+	position:relative;
+	float:left;
+	}
+
+#top #nav ul a{
+	line-height:26px; 
+}
+
+#top #nav li{
+	float:left;
+	position:relative;
+	z-index:20;
+}
+
+#top #nav li li{
+	border-left:none;
+	margin-top:0;
+}
+
+#top #nav ul {
+	position:absolute;
+	display:none;
+	top:26px;
+	left:-1px;
+	
+
+}
+
+#top #nav li ul a{
+	height:auto;
+	float:left;
+	text-align:left;
+	padding:0 5 0 21px;
+	width:180px;
+}
+
+#top #nav ul ul{
+	top:auto;
+}	
+
+#top #nav li ul ul {
+	left:172px;
+	top:0px;
+}
+
+#top #nav li:hover ul ul, #top #nav li:hover ul ul ul,#top  #nav li:hover ul ul ul ul{
+  	display:none;	
+}
+#top #nav li:hover ul, #top #nav li li:hover ul, #top #nav li li li:hover ul, #top #nav li li li li:hover ul{
+	display:block;
+}
+/*naviagation*/
+#top #nav a{
+	color:#fff;
+}
+
+#top #nav ul {
+	border:1px solid #bb4300;
+	width:auto;
+}
+
+
+
+#top #nav li ul a{
+	
+	color:#bb4300;
+}
+
+#top  #nav ul a, #top  #nav ul li{
+	background-color:#fff;
+	background-image:none;
+}
+
+#top  #nav ul a:hover, #top  #nav ul a:focus {
+	background-color:#e2e2e2;
+	color:#bb4300;
+}
+
+#top  #nav a:hover, #top  #nav a:focus {
+	color:#bb4300;
+	background-color:#fff;
+}
+
+
+#top #nav .current_page_item a{
+	color:#555;
+}
+
+#top #nav .current_page_parent .current_page_item a, #top #nav .current_page_item ul a{
+	border-right:1px solid #f5f5f5;
+	border-left:none;
+	background-image:none;
+	color:#444;
+}
+img{ border:none; }
+form
+{
+	margin-bottom: 0px;
+}
+input
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	color: #000000;
+}
+a
+{
+	font-family: tahoma, verdana, arial, helvetica;
+	font-size: 10pt;
+	color: #003399;
+	text-decoration: underline;
+    cursor: pointer;
+}
+fieldset
+{
+	border: solid 1px #ccc;
+}
+legend, .legend
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #404040 !important;
+}
+hr
+{
+	border: solid 1px #ccc;
+	height: 1px;
+}
+.Label
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: normal;
+	font-size: 8pt;
+	color: black; /*color:#444444;*/
+}
+
+.LabelBold
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: bold;
+	font-size: 10pt;
+	color: black;
+}
+.LabelSmall
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: normal;
+	font-size: 7pt;
+	color: black;
+}
+textarea
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	color: #000000;
+}
+select
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+}
+
+.hiddenButton
+{
+	display: none;
+}
+.ButtonRow
+{
+	padding-top: 3px;
+}
+.RequiredField
+{
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-image: url(../images/required.gif);
+}
+.PageTitle
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	height: 30px;
+	color: Black;
+	font-size: 16pt;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-top: 7px;
+}
+.ErrorMsg
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	color: red;
+}
+.DivHorizontalScrolling
+{
+	overflow: auto;
+	position: relative;
+	width: expression( document.body.clientWidth - ( this.divOffsetRight != null ? this.divOffsetRight : this.divoffsetright != null ? this.divoffsetright : 18 ) +   'px' );
+}
+.Button
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: bolder;
+	font-size: 7pt;
+	border: 1px solid gray;
+	background-image: url(../images/button.gif);
+	background-color: #F0F0F0;
+	color: black;
+	cursor: hand;
+	height: 20px;
+	width: 85px;
+	line-height:20px;	
+	cursor: pointer;
+}
+/*/////////////////////////////////////
+//               Grid                //
+/////////////////////////////////////*/
+.DataGrid
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: normal;
+	font-size: 7.5pt;
+	text-align: left;
+	color: #000000;
+	border:1px solid #000;
+	padding-left: 3px;
+}
+.DataGrid td{ padding:3px }
+.DataGridHeader
+{
+	z-index: 4;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #606060;
+	height: 19px;
+	padding-left: 3px;
+	text-align: center;
+	
+}
+
+.DataGridHeader a
+{
+	color: #ffffff;
+}
+
+.DataGridHeaderNoLock
+{
+	z-index: 99;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7.5pt;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #606060;
+	height: 19px;
+	padding-left: 3px;
+	text-align: center;
+	position: relative;
+}
+.DataGridItem
+{
+	background-color: #ffffff;
+	font-size: 7.5pt;
+}
+.DataGridAlternatingItem
+{
+	background-color: #E1E1E1;
+	font-size: 7.5pt;
+}
+th
+{
+	border: 1px outset #cdcdcd;
+}
+.DataGridDiv
+{
+	position: relative;
+	width: 100%;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divOffset != null ? this.divOffset : this.divoffset != null ? this.divoffset : 38 ) +   'px' );
+}
+.DetailListDiv
+{	
+	overflow: auto;
+	position: relative;
+	width: 100%;
+}
+.DataGridDivHorizontalScrolling
+{
+	overflow: auto;
+	position: relative;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divOffset != null ? this.divOffset : this.divoffset != null ? this.divoffset : 35 ) +   'px' );
+	width: expression( document.body.clientWidth - ( this.divOffsetRight != null ? this.divOffsetRight : this.divoffsetright != null ? this.divoffsetright : 18 ) +   'px' );
+}
+
+/*/////////////////////////////////////
+//                Tabs               //
+/////////////////////////////////////*/
+.uiTabTable
+{
+    border-left: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
+    border-right: 1px #999999 solid;
+}
+.uiSecondaryTabTable
+{
+    border-left: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
+    border-right: 1px #999999 solid;
+    background-color: white;
+}
+.uiTabOn
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    height: 26px;
+    border-top: 3px #950428 solid;
+    border-bottom: 1px #999999 solid;
+    font-size: 8pt;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #FFFFFF;
+    cursor: hand;
+    text-align: center;
+}
+.uiTabOnDisabled
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    height: 26px;
+    border-top: 3px #950428 solid;
+
+    font-size: 8pt;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #FFFFFF;
+    cursor: default;
+    text-align: center;
+}
+.uiTabOff
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    height: 26px;
+    border-top: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
+    font-size: 8pt;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #E1E1E1;
+    cursor: hand;
+    text-align: center;
+}
+.uiTabOffDisabled
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    height: 26px;
+    border-top: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
+    font-size: 8pt;
+    color: #999999;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #E1E1E1;
+    cursor: default;
+    text-align: center;
+}
+.uiChildTabOn
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 15px;    
+    text-decoration: underline;
+    cursor: hand;
+}
+.uiChildTabOnDisabled
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 15px;
+    --background-color: #006699;
+    --color: White;
+}
+.uiChildTabOff
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 15px;     
+    text-decoration: none;
+    cursor: hand;
+}
+.uiChildTabOffDisabled
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 15px;     
+    text-decoration: none;
+    color: #999999;
+}
+.uiChildTabPipe
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    text-align: center;
+}
+.uiChildTabArrow
+{
+    width: 8px;
+    padding-left: 5px;
+}
+
+/*/////////////////////////////////////
+//           Page Message            //
+/////////////////////////////////////*/
+.PageMessage
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	width: 100%;
+	height: 100%;
+	background-color: White;
+	padding: 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7B7D7B;
+}
+.PageMessageHeader
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	height: 23px;
+}
+.PageMessageContent
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 9pt;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.PageMessageDiv
+{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=  '#666666' , Direction=135, Strength=4);
+	z-index: 1004;
+	position: absolute;
+	left: expression( document.body.clientWidth - 9 - ( this.style.width.substr( 0, this.style.width.length - 2 ) ) +   'px' );
+}
+
+.PageMessageIFrame
+{
+	z-index: 1003;
+	position: absolute;
+	left: expression( document.body.clientWidth - 5 - ( this.style.width.substr( 0, this.style.width.length - 2 ) ) +   'px' );
+}
+
+/*/////////////////////////////////////
+//           Header Style            //
+/////////////////////////////////////*/
+.HeaderLinkButton
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 10pt;
+    color: #575857;
+    text-decoration: none;
+    vertical-align:middle;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.HeaderLinkButtonItemOver
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    color: #575857;
+    vertical-align:middle;    
+    text-decoration: underline;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.HeaderCustomerName
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+    font-size: 8pt;
+    font-weight: bold;
+    color: White;
+    vertical-align:middle;    
+    padding: 0px 8px 0px 8px;
+}
+
+.HeaderDialogRow2
+{
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	margin: 0;
+	height: 6px;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	background-color: #666666;
+}
+
+.HeaderRibbon
+{
+	position: absolute;
+	top: 83px;
+	right: 0;
+	float: right;
+	height: 30px;
+	padding-left: 45px;
+	background: #CECECE url(   '../images/curve_Gray.gif' ) no-repeat left;
+
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 8pt;
+	color: #ffffff;
+}
+
+
+/*/////////////////////////////////////
+// Welcome Page
+/////////////////////////////////////*/
+.uiWelcomeHeader
+{
+	font-family: tahoma, verdana, arial, helvetica, MS Sans Serif;
+	font-size: 16pt;
+	color: #bb4300;
+}
+.uiHomePageMessage
+{
+	font-family: verdana, arial, helvetica, MS Sans Serif;
+	font-size: 8.5pt;
+}
+
+/*/////////////////////////////////////
+//           Misc Site Style         //
+/////////////////////////////////////*/
+.link
+{
+	font-family: tahoma, verdana, arial, helvetica;
+	font-size: 8pt;
+	color: #003399;
+	text-decoration: underline;
+}
+hr
+{
+	height: 1px;
+}
+.CellHighLight
+{
+	color: #ff6600;
+}
+.CellHighLight2
+{
+	color: #5CB3FF;
+}
+
+/*/////////////////////////////////////
+// Component Art
+/////////////////////////////////////*/
+.ContextMenuItem
+{
+	color: Black;
+	font-size: 7.5pt;
+	font-weight: bold;
+	font: menu;
+	border: 1px solid #7C7C94;
+	border-bottom-color: #9593B2;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	cursor: hand;
+	background-color: White;
+}
+
+.CA_ButtonLookMenuGroup
+{
+	color: #4E4E4E;
+	background-color: #EBEBEB;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+}
+
+.CA_ButtonLookMenuItem
+{
+	color: #4E4E4E;
+	background-color: #EBEBEB;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+	border-style: inset;
+	border-color: #aca899;
+	border-width: thin;
+	border-left-style: none;
+	border-top-style: none;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	cursor: hand;
+	height: 16;
+}
+
+.CA_ButtonLookMenuItemHover
+{
+	background-color: #8D8F95;
+	color: white;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+	border: 1px;
+	border-top-color: #B8B8B9;
+	border-left-color: #B8B8B9;
+	border-right-color: black;
+	border-bottom-color: black;
+	border-style: solid;
+	cursor: hand;
+}
+
+.CA_ButtonLookMenuItemDown
+{
+	background-color: #8D8F95;
+	color: white;
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+	border: 1px;
+	border-left-color: black;
+	border-top-color: black;
+	border-right-color: #B8B8B9;
+	border-bottom-color: #B8B8B9;
+	border-style: solid;
+	cursor: hand;
+}
+
+.CA_MenuBreak
+{
+	background-image: url(../images/Menu/Office XP/break_bg.gif);
+	width: 100%;
+	height: 1px;
+	font-size: 8pt !important;
+	font-family: Tahoma !important;
+}
+
+/*=========================================
+ * Used by Loadassignment and related pages 
+ */
+#divFlashMessage
+{
+	display: none;
+	text-align: right;
+	width: 100%;
+}
+
+/*=========================================
+ * Used by Loadassignment and related pages 
+ */
+#divFlashMessage span
+{
+	font-weight: bold;
+	background-color: #639CCE;
+	color: white;
+	padding: 5px 5px 5px 5px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+/*/////////////////////////////////////
+//           Please Wait             //
+/////////////////////////////////////*/
+#PleaseWait
+{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=  '#666666' , Direction=135, Strength=4);
+	position: absolute;
+	z-index: 99999;
+	top: expression( (document.body.clientHeight / 2) - (this.height / 2) ); 
+    left:expression( (document.body.clientWidth / 2) - (this.width / 2) );
+    font:12px "Verdana","Lucida Console","Courier New",monospace;
+    color:#111;
+    background-color:white;
+    border:1px solid #111;
+}
+
+/*/////////////////////////////////////
+//            Vertical Tabs          //
+/////////////////////////////////////*/
+.TopGroup
+{
+	z-index: 99;
+	position: relative;
+	background-color: white;
+}
+.DefaultTab
+{
+	font-size: 9px;
+	background-image: url(../images/tabs/vert_off.gif);
+	width: 15px;
+	cursor: pointer;
+	font-family: tahoma, verdana, arial, helvetica, MS Sans Serif;
+	height: 48px;
+	background-color: white;
+	text-align: center;
+}
+.SelectedTab
+{
+	font-size: 9px;
+	background-image: url(../images/tabs/vert_on.gif);
+	width: 15px;
+	cursor: default;
+	font-family: tahoma, verdana, arial, helvetica, MS Sans Serif;
+	height: 48px;
+	background-color: white;
+	text-align: center;
+}
+.MultiPage
+{
+	z-index: 98;
+	width: 100%;
+	top: 5px;
+	bottom: 5px;
+	background-color: white;
+}
+
+/*/////////////////////////////////////
+//             Calendar              //
+/////////////////////////////////////*/
+.calendar
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #575857;
+    background-color: white;
+    cursor: default;
+}
+.month
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.title
+{
+    height: 20px;
+    background-color: White;
+}
+.title TD
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #890033;
+    text-align: center;
+}
+.nextprev
+{
+    font-family: webdings;
+    font-size: 11pt;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.monthheader
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    color: #890033;
+}
+.dayheader
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    width: 22px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #890033;
+    color: white;
+}
+.day
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    width: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: #cdcdcd;
+    border-style: solid;
+    background-color: white;
+}
+.dayhover
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    width: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    border-width: 1px;
+    border-color: #F6F6F6;
+    border-style: solid;
+}
+.othermonthday
+{
+    color: #8E9193;
+    background-color: #E0E0E0;
+}
+.selectedday
+{
+    background-color: #930327;
+    color: #ffffff;
+    font-weight: bold;
+}
+.today
+{
+    font-weight: bold;
+    background-color: #606060;
+    color:White;
+}
+
+.weekend
+{
+}
+
+.footer
+{
+    border-top: 1px #999999 solid;
+}
+
+/*/////////////////////////////////////
+//            Header Menu            //
+/////////////////////////////////////*/
+.MenuGroup
+{
+    font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+    vertical-align: middle;
+    border: 0px;
+    margin-left: 4px;
+    color: white;
+    cursor: hand;
+}
+
+.TopMenuItem
+{
+	color: white;
+    padding: 5px 12px 5px 12px;
+}
+
+.TopMenuItemOver
+{
+    color:#890033;
+    padding: 5px 12px 5px 12px;
+    background-color: White;
+}
+
+.SubGroup1
+{
+    font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+    vertical-align: middle;
+    border-right: solid 1px #890033;
+    border-left: solid 1px #890033;
+    border-bottom: solid 1px #890033;
+    background-color: White;
+    cursor: hand;
+}
+
+.SubMenuItem 
+{
+    font-size: 8pt; 
+    color: #890033;
+    padding: 5px 20px 5px 20px;
+}
+
+.SubMenuItemOver
+{
+    font-size: 8pt; 
+    color: #890033;
+    padding: 5px 20px 5px 20px;
+    background-color: #E6E6E6;
+}
+
+.SubGroup2
+{
+    font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+    vertical-align: middle;
+    border: solid 1px #890033;
+    background-color: White;
+    cursor: hand;
+}
+
+/*/////////////////////////////////////
+//           Context Menu            //
+/////////////////////////////////////*/
+.Level0MenuItem
+{
+	border-top: 1px #313030 solid;
+	border-left: 1px #313030 solid;
+	border-right: 1px #313030 solid;
+	border-bottom: 1px #313030 solid;
+	background-color: #313030;
+	color: white;
+	font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+	cursor: hand;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+}
+
+.Level0MenuItemOver
+{
+	border-top: 1px #666666 solid;
+	border-left: 1px #666666 solid;
+	border-right: 1px black solid;
+	border-bottom: 1px black solid;
+	background-color: #930327;
+	color: white;
+	font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+	cursor: hand;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.Level1MenuItem
+{
+	border-top: 1px #666666 solid;
+	border-left: 1px #666666 solid;
+	border-right: 1px #666666 solid;
+	border-bottom: 1px #666666 solid;
+	background-color: #666666;
+	color: white;
+	font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+	cursor: hand;
+	padding: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.Level1MenuItemOver
+{
+	border-top: 1px #666666 solid;
+	border-left: 1px #666666 solid;
+	border-right: 1px black solid;
+	border-bottom: 1px black solid;
+	background-color: #930327;
+	color: white;
+	font-family: tahoma,verdana,arial,helvetica;
+	font-size: 8pt;
+	cursor: hand;
+	padding: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*/////////////////////////////////////
+//           DIV PAGES               //
+/////////////////////////////////////*/
+.DivForm
+{
+	padding: 5px 5px 2px 5px;
+}
+/* Page Title */
+.DivPageTitle
+{
+	padding: 5px 0 5px 0x;
+	width: 100%;
+}
+/* Search Criteria Panel */
+.DivSearchCriteriaPanel
+{
+	text-align: right;
+	padding: 5px;
+}
+/* Search Criteria Panel (end) */
+/* Div Detail/Summary Pane */
+.DivDetailRow
+{
+	overflow: hidden;
+	margin-top: 0px;
+	width: 100%;
+}
+.DivDetailRowLeft
+{
+	width: 50%;
+	float: left;
+	text-align: right;
+	vertical-align: middle;
+	padding: 2px 0px 0 0;
+	overflow: hidden;
+}
+.DivDetailRowRight
+{
+	width: auto;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 5px;
+	overflow: hidden;
+	margin-top: 2px;
+	margin-left: 50%;
+}
+/* Div Detail/Summary Pane (end) */
+/* Div Results Grid */
+.DivResultsGrid
+{
+	margin-top: 1px;
+	position: relative;
+	width: 100%;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divOffset != null ? this.divOffset : this.divoffset != null ? this.divoffset : 30 ) +   'px' );
+	border-right: solid 2px silver;
+	border-bottom: solid 2px silver;
+	border-left: solid 2px silver;
+}
+.DivResultsGridHorizontalScrolling
+{
+	margin-top: 1px;
+	position: relative;
+	border-right: 2px solid silver;
+	border-bottom: 2px solid silver;
+	border-left: 2px solid silver;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divOffset != null ? this.divOffset : this.divoffset != null ? this.divoffset : 30 ) +   'px' );
+}
+/* Div Results Grid (end) */
+/* Div Form Buttons */
+.DivButtonsLeft
+{
+	padding: 2px 0 0 0;
+	float: left;
+	margin-right: auto;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.DivButtonsRight
+{
+	padding: 2px 0 0 0;
+	overflow: hidden;
+	margin-left: auto;
+	text-align: right;
+	overflow: hidden;
+}
+.DivButton
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: bolder;
+	font-size: 7pt;
+	border: 1px solid gray;
+	background-image: url(../images/button.gif);
+	background-color: #F0F0F0;
+	color: black;
+	cursor: hand;
+	height: 20px;
+	width: 100px;
+}
+/* Div Form Buttons (end) */
+/* Div Miscellaneous */
+.GridNavigator
+{
+	background-color: #DEDEDE;
+	padding: 5px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-top: solid 1px silver;
+	border-right: solid 1px silver;
+	border-left: solid 1px silver;
+	margin-bottom: -2px;
+	width: 100%;
+}
+.DivSeparatorLine
+{
+	border-top: solid 1px silver;
+	height: 2px;
+	text-align: center;
+	margin-bottom: -17px;
+}
+.Width100percent
+{
+	width: 100%;
+}
+.Padding2px
+{
+	padding: 2px 2px 2px 2px;
+}
+.TextAlignRight
+{
+	text-align: right;
+}
+/* Div Miscellaneous (end) */
+
+/*/////////////////////////////////////
+//       Collapsible Panel           //
+/////////////////////////////////////*/
+
+.Link_Collapse
+{
+	cursor: default;
+	background: #ffffff url(../images/Tree/exp.gif) no-repeat middle left;
+	height: 100%;
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+.Link_Expand
+{
+	cursor: default;
+	background: #ffffff url(../images/Tree/col.gif) no-repeat middle left;
+	height: 100%;
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+/*//////////////////////////////////////////
+//            Matrix Grid Styles          //
+//////////////////////////////////////////*/
+
+/* Surrounds the MatrixGrid */
+.MatrixGridDiv
+{
+	border: black 1px solid;
+	overflow: auto;
+	position: relative;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divoffsetbottom != null ? this.divoffsetbottom : 28 ) +   'px' );
+}
+.MatrixGridDivHorizontalScrolling
+{
+	border: black 1px solid;
+	overflow: auto;
+	position: relative;
+	height: expression( document.body.clientHeight - this.offsetTop - ( this.divoffsetbottom != null ? this.divoffsetbottom : 28 ) +   'px' );
+    width: expression( document.body.clientWidth - ( this.divoffsetright != null ? this.divoffsetright : 8 ) +   'px' );	
+}
+
+.MatrixGrid
+{
+	border: none;
+	width: 100%;
+}
+
+.MatrixGrid TD
+{
+	border: none;
+	height: 25px;
+	font-size: 7.5pt;
+	cursor: hand;
+	text-indent: 1px;
+	height: 25px !important;
+	vertical-align: middle;
+	padding: 0px 2px 0px 2px;
+}
+
+.MatrixGridHeader
+{
+	font-size: 7.5pt;
+	font-weight: bold;
+	color: #fff;
+	background-color: #606060;
+	height: 19px;
+	text-align: center;
+	position: relative;
+	top: expression(this.offsetParent.tagName ==   "DIV" && this.offsetParent.style.overflow == "auto" ? this.offsetParent.scrollTop : '' );
+}
+
+.MatrixGridHeader TD
+{
+	padding: 0px;
+	margin: 2px;
+	vertical-align: middle;
+	border: outset 1px #ccc;
+	font-size: 7.5pt;
+}
+
+.MatrixGridHeader a
+{
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+.MatrixGridHeader a:hover
+{
+	background-color: #777;
+}
+
+/* Applied to non-sortable column headers */
+.MatrixGridHeader .noSort
+{
+	color: #fff;
+	cursor: default;
+	text-decoration: none;
+}
+
+.MatrixGridItem
+{
+	background-color: #fff;
+}
+
+.MatrixGridAlternatingItem
+{
+	background-color: #ddd;
+}
+
+.MatrixGridItem_Hover, .MatrixGridAlternatingItem_Hover
+{
+	background-color: #ccd8ff;
+}
+
+.MatrixGridItemSelectedItem, .MatrixGridItemSelectedItem_Hover
+{
+	background-color: #a0beff;
+}
+
+.MatrixGridItemSelectedItem TD, .MatrixGridItemSelectedItem_Hover TD
+{
+}
+
+/* Applied to a grid cell that opens a context menu */
+.GridCellContextMenu
+{
+	cursor: help !important;
+	border-bottom: solid 1px #aaa;
+}
+
+/* Used to ensure no whitespace is rendered for hidden columns */
+.hiddenColumn
+{
+	display: none;
+}
+
+/*////////////////////////////
+//  Grid Navigator Styles   //
+////////////////////////////*/
+
+.GridNavFirst a:hover, .GridNavPrevious a:hover, .GridNavNext a:hover, .GridNavLast a:hover
+{
+	color: #950428 !important;
+}
+
+/* Corrects the uneven appearance of the First and Last buttons */
+.GridNavFirst, .GridNavLast
+{
+	padding-bottom: 2px;
+}
+
+.SelectAllButton
+{
+	font: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+	background-image: url(../images/button.gif);
+	padding: 1px 5px 3px 5px;
+	width: 80px;
+	border: solid 1px #999;
+	margin-bottom: 1px;
+	height: 17px;
+	text-decoration: none;
+	color: #000;
+	cursor: hand;
+}
+
+.GridNavButton a
+{
+	font: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 7pt;
+	font-weight: bolder;
+	background-image: url(../images/button.gif);
+	padding: 2px 15px 2px 15px;
+	border: solid 1px #999;
+	margin-right: 10px;
+	margin-bottom: 1px;
+	height: 16px;
+	text-decoration: none;
+	color: #000;
+	cursor: default;
+}
+
+/*/////////////////////////////////////
+//  MatrixGrid Context Menu Styles   //
+/////////////////////////////////////*/
+
+.MatrixContextTopGroup
+{
+	background-color: #666;
+	cursor: hand;
+	margin: 0px -1px 0px -1px;
+}
+
+.MatrixContextMenuItem
+{
+	color: #fff;
+	font-size: 8pt;
+	font-family: Tahoma;
+	border: solid 2px #666;
+	background-color: #666;
+}
+
+.MatrixContextMenuItemHover
+{
+	color: #fff;
+	font-size: 8pt;
+	font-family: Tahoma;
+	border: outset 2px Gray;
+	background-color: #930327;
+}
+
+/*/////////////////////////////////////
+//  OMS Order Search Control Styles  //
+/////////////////////////////////////*/
+
+.OMSSearch_elementBlock
+{
+	width: 125px;
+	height: 55px;
+	border: solid 0 blue; /* Use for testing purposes only */
+	text-align: center;
+	float: left;
+	padding: 0 3px 0 3px;
+	vertical-align: middle;
+}
+.OMSSearch_searchBlock
+{
+	float: left;
+	width: 100%;
+}
+.OMSSearch_pairBlock
+{
+	width: 240px;
+	float: left;
+}
+.OMSSearch_labelBlock
+{
+	width: 110px;
+	float: left;
+	text-align: right;
+	margin-right: 3px;
+}
+.OMSSearch_controlBlock
+{
+	width: 125px;
+	float: left;
+}
+.OMSReferenceDropDown
+{
+    vertical-align: top;
+    padding-top:1px;
+}
+
+/*/////////////////////////////////////
+//     Context Menu Button Styles    //
+/////////////////////////////////////*/
+.cmbButton
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	border: 1px solid gray;
+	background-image: url(../images/button.gif);
+	background-color: #F0F0F0;
+	color: black;
+	cursor: hand;
+	height: 19px;
+	width: 100px;
+	text-align:center;
+}
+
+.cmbMenu
+{
+    width:100%;
+}
+
+.cmbTopMenuItem
+{
+	width:100%;
+	color: black;
+	font-family: tahoma,verdana,arial,helvetica;
+	font-size: 7pt;
+    font-weight:bold;
+	text-align: center;
+	cursor:hand; 
+}
+
+/*/////////////////////////////////////
+//      Multi Select DDL  Styles     //
+/////////////////////////////////////*/
+.MultiSelectDDL
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-weight: normal;
+	font-size: 8pt;
+	color: black; /*color:#444444;*/
+	vertical-align:top;
+}
+.MultiSelectDDL TD 
+{
+    vertical-align: top;
+}
+
+/* OLD jQuery - REMOVE WHEN ALL CONVERTED */
+.dialogTitle
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif;
+	font-size: 10pt;
+	font-weight: bold;
+	padding-left: 7px;
+	padding-top: 7px;
+}
+
+/*/////////////////////////////////////
+//      In-Line Dialog Control       //
+/////////////////////////////////////*/
+.Dialog
+{
+    border-top: solid 1px gray;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    border-left: solid 1px gray;
+}
+.Dialog_Header
+{
+    color: white; 
+    padding: 5px 5px 5px 5px; 
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif; 
+    font-size: 14px; 
+    font-weight: bold;
+    cursor: default; 
+    background-color: #3F3F3F;
+}
+.Dialog_Content
+{
+    color: black; 
+    padding: 3px 5px 2px 5px; 
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif; 
+    font-size: 12px; 
+    background-color: White;
+}
+.Dialog_Footer
+{
+   color: black; 
+    padding: 2px 5px 5px 5px; 
+    font-family: Tahoma, Verdana, Arial, Helvetica, MS Sans Serif; 
+    font-size: 12px; 
+    background-color: White;
+}
+
+/*added by eric.wang*/
+.validSpan{
+	color:red;	
+}
+
+.bground{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:20000;
+        filter: Alpha(Opacity=30);
+        padding-top: 200px;
+    }

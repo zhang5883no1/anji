@@ -1,0 +1,110 @@
+
+.GridDiv, .GridDivHorizontalScrolling {
+    border: 1px solid black;
+    overflow: auto;
+    position: relative;
+}
+.GridDivHorizontalScrolling {
+}
+.GridDivScrollingParent {
+    border: 1px solid black;
+    overflow: auto;
+    position: relative;
+}
+.Grid {
+    border: medium none;
+    border-collapse: separate !important;
+    width: 100%;
+}
+.Grid .Header {
+    position: relative;
+    z-index: 100;
+}
+.Grid .Header TH, .Grid .Header .Options {
+    background-color: #606060;
+    border: 1px outset #CCCCCC;
+    font-size: 7.5pt;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.Grid .Header TH A {
+    color: #FFFFFF;
+    display: block;
+    padding: 5px 1px;
+}
+.Grid .Header TH.Header_Hover {
+    background-color: #777777;
+}
+.Grid .Header TH A.noSort {
+    cursor: default;
+    text-decoration: none;
+}
+.Grid .Header .Options {
+    white-space: nowrap;
+    width: 1%;
+}
+.Grid .Header .Options .SelectAll INPUT {
+    height: 13px;
+    margin: 0;
+    overflow: hidden;
+    width: 16px;
+}
+.Grid .Header .Options .Export {
+    vertical-align: middle;
+}
+.Grid .Item {
+    background-color: #FFFFFF;
+}
+.Grid .AltItem {
+    background-color: #DDDDDD;
+}
+.Grid .Item_Hover {
+    background-color: #CCD8FF;
+}
+.Grid .SelectedItem {
+    background-color: #A0BEFF;
+}
+.Grid .SelectableItem {
+}
+.Grid .Header TD, .Grid .Item TD, .Grid .AltItem TD, .Grid .SelectedItem TD {
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    font-size: 7.5pt;
+    height: 25px;
+    padding: 0 3px;
+    vertical-align: middle;
+}
+.PagerItem TD {
+    background-color: #DEDEDE;
+    padding: 0 1px;
+}
+.Grid .GridPager {
+    position: relative;
+    z-index: 100;
+}
+.Grid .GridPager TD {
+    padding: 0;
+}
+.Grid .GridPager TD A:hover {
+    color: #950428 !important;
+}
+.Grid .GridPager .First, .Grid .GridPager .Last {
+    padding-bottom: 2px;
+}
+.Grid .GridPager {
+    background-color: #DEDEDE;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    border-top: 1px solid silver;
+    margin-bottom: -2px;
+    padding: 0 5px;
+    width: 100%;
+}
+.SummaryFooter {
+    height: 17px;
+    padding: 2px 5px;
+    position: absolute;
+    text-align: right;
+    white-space: nowrap;
+}

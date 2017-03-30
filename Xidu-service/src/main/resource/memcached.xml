@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memcached>
+	<switcher>on</switcher>
+	<servers>10.203.28.27:11211</servers>
+	<weights>5,5</weights>
+	<compressEnable>true</compressEnable>
+	<defaultEncoding>UTF-8</defaultEncoding>
+	<initConn>5</initConn>
+	<maxConn>250</maxConn>
+	<minConn>5</minConn>
+	<socketTO>3000</socketTO>
+	<nagle>false</nagle>
+	<maintSleep>5000</maintSleep>
+	<maxIdle>21600000</maxIdle>
+	<aliveCheck>false</aliveCheck>
+</memcached>

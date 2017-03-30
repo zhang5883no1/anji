@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsconfig>				
+	<connectionFactory name="ActivemqQueueConnectionFactory">
+		<property name="initialContextFactory" value="org.apache.activemq.jndi.ActiveMQInitialContextFactory" />
+		<property name="providerURL" value="tcp://localhost:61616" />
+		<property name="jmsPrincipal" value="" />
+		<property name="jmsCredentials" value="" />
+		<property name="connectionFactoryJNDI" value="QueueConnectionFactory" />
+		<property name="maxWorkerCount" value="5" />
+	</connectionFactory>
+	<connectionFactory name="WeblogicConnectionFactory">
+		<property name="initialContextFactory" value="weblogic.jndi.WLInitialContextFactory" />
+		<property name="providerURL" value="t3://10.203.25.130:7001" />
+		<property name="jmsPrincipal" value="weblogic" />
+		<property name="jmsCredentials" value="Pass1234" />
+		<property name="connectionFactoryJNDI" value="connectionFactory" />
+		<property name="maxWorkerCount" value="10" />
+	</connectionFactory>
+	<connectionFactory name="ActivemqTopicConnectionFactory">
+		<property name="initialContextFactory" value="org.apache.activemq.jndi.ActiveMQInitialContextFactory" />
+		<property name="providerURL" value="tcp://localhost:61616" />
+		<property name="jmsPrincipal" value="" />
+		<property name="jmsCredentials" value="" />
+		<property name="connectionFactoryJNDI" value="TopicConnectionFactory" />
+		<property name="maxWorkerCount" value="5" />
+	</connectionFactory>
+</jmsconfig>

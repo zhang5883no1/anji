@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+	<persistence-unit name="common" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<!--  <jta-data-source>dos3DS</jta-data-source>-->
+	<jar-file>classpath:../lib/Xidu-service-0.0.1-SNAPSHOT.jar</jar-file>
+		<properties>
+						<!-- 数据库方言-->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<!-- 数据库驱动 -->
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<!-- 数据库用户名 -->
+			<property name="hibernate.connection.username" value="root" />
+			<!-- 数据库密码 -->
+			<property name="hibernate.connection.password" value="root" />
+			<!-- 数据库连接URL -->
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/newchats" />
+			<!-- 最大抓取深度 -->
+			<property name="hibernate.max_fetch_depth" value="3" />
+			<!-- 验证创建数据库表结构  -->
+			<!--  
+		    <property name="hibernate.hbm2ddl.auto" value="create" /> 
+		    -->
+			<!-- 显示SQL -->
+			<property name="hibernate.show_sql" value="true" />
+			<!-- 格式SQL -->
+			<property name="hibernate.format_sql" value="true" />
+			
+			<!-- 是否使用结构化的方式缓存对象  -->
+			<!-- <property name="hibernate.cache.use_structured_entries" value="true" />  -->
+			
+			<!-- 设置是否使用二级缓存: true or false  -->
+			<property name="hibernate.cache.use_second_level_cache" value="false" />	
+						 
+			<!-- use query cache -->
+			<property name="hibernate.cache.use_query_cache" value="false" />
+			
+			<!-- second level cache of EHCache -->
+			<!-- 	
+			<property name="hibernate.cache.provider_class" value="net.sf.ehcache.hibernate.EhCacheProvider" />		
+			<property name="hibernate.cache.use_minimal_puts" value="true" />
+			<property name="net.sf.ehcache.configurationResourceName" value="/ehcache.xml" />
+			 -->
+			 
+			<!-- second level cache of MemCached -->	
+			<!-- 
+			<property name="hibernate.cache.provider_class" value="com.googlecode.hibernate.memcached.MemcachedCacheProvider" />		
+			<property name="hibernate.memcached.servers" value="localhost:11211" />
+			<property name="hibernate.memcached.cacheTimeSeconds" value="3600" />
+			<property name="hibernate.memcached.clearSupported" value="false" />
+			 --> 	
+		</properties>
+	</persistence-unit>
+</persistence>  

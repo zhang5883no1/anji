@@ -1,0 +1,48 @@
+/* CSS Document */
+.titlefont{
+font:"宋体";
+font-size:12px;
+color:#025d7b;
+}
+
+.titlecontentfont{
+font:"宋体";
+font-size:12px;
+color:#4d4c4c;
+}
+
+/* for create dealer*/
+
+.dealercreatetitle{
+font:"宋体";
+font-size:16px;
+color:#4d4c4c;
+font-weight:bold
+}
+
+
+.dealerform {
+font:"宋体";
+font-size:12px;
+margin-top:30px;	
+margin-left:100px;
+color:#4d4c4c;
+}
+
+.labelstyle{
+width:100px;float:left;
+margin-top:20px;
+}
+.inputstyle{
+margin-top:20px;
+}
+
+/* for query dealer*/
+
+.dealertable {
+font:"宋体";
+color:#4d4c4c;
+font-size:12px;
+margin-top:10px;	
+margin-left:0px;
+}

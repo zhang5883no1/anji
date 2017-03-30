@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelMappings namespace="">
+		<excelMapping templateName="customerExportTemplate">
+		<sheetMapping name="Sheet1" startRowIndex="1"
+			className="com.zhibo.mainTain.domain.CustomerBasicInfo">
+			<columnMapping header="序号 Item" columnIndex="0" field="items"
+				type="string" />
+			<columnMapping header="姓名" columnIndex="1" field="userName"
+				type="string" />
+			<columnMapping header="昵称" columnIndex="2" field="nickName"
+				type="string" />
+			
+			<columnMapping header="性别" columnIndex="3" field="sex"
+				type="string" />
+			
+			<columnMapping header="手机" columnIndex="4" field="mobile"
+				type="string" />
+			
+			<columnMapping header="qq" columnIndex="5" field="qq"
+				type="string" />
+			
+			<columnMapping header="所属业务员" columnIndex="6" field="userId"
+				type="string" />
+			<columnMapping header="链接" columnIndex="7" field="url"
+				type="string" />
+			<columnMapping header="邮件" columnIndex="8" field="mail"
+				type="string" />
+				<columnMapping header="成交状态" columnIndex="9" field="business"
+				type="string" />
+				<columnMapping header="开户状态" columnIndex="10" field="openAccount"
+				type="string" />
+				<columnMapping header="入金金额" columnIndex="11" field="accountPrice"
+				type="string" />
+			
+	</sheetMapping>	
+</excelMapping>
+</excelMappings>
+	 	 											

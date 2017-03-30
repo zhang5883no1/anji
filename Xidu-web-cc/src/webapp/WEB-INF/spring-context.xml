@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd  
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<context:annotation-config />
+    
+    <context:component-scan base-package="com.xidu" >
+		<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
+	</context:component-scan> 
+	<context:component-scan base-package="com.zhibo" >
+		<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
+	</context:component-scan> 
+    
+	<!-- <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean"> 
+		<property name="persistenceUnitName" value="test"/> </bean> -->
+	
+	<!-- 配置处理上传文件的信息 
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8"></property>
+		<property name="maxUploadSize" value="10485760000"></property>
+		<property name="maxInMemorySize" value="40960"></property>
+	</bean>-->
+	
+	<!-- 类工厂由spring管理 -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="common" />
+		<property name="persistenceXmlLocation" value="classpath:jpa_persistence.xml" />
+	</bean>
+  
+	<!-- 事务由spring管理 -->
+	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+    
+     <!-- Bean definition: using in JUnit, uncomment it when doing Unit testing -->
+    <bean id="jpaTemplate" class="org.springframework.orm.jpa.JpaTemplate">
+    	<property name="entityManagerFactory" ref="entityManagerFactory"></property>
+    </bean>
+    
+    <bean id="logger" class="org.slf4j.LoggerFactory" factory-method="getLogger">
+    	<constructor-arg type="java.lang.String" value="rollingFile"></constructor-arg>
+    </bean>
+    
+	<tx:annotation-driven transaction-manager="txManager" />
+
+	<!-- Exception translation bean post processor -->
+	<bean
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+	
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean"/>
+	
+	<!-- Application Message Bundle -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+		<list>
+			<value>classpath:messages</value>
+			<value>classpath:errors</value>
+		</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8"/>
+	</bean>
+	<!-- deviationReport bean -->
+	<bean id="deviationReport" class="com.zhibo.reporting.service.impl.DeviationFileLoadingConcreteDecorator">
+	    <constructor-arg ref="fileLoadingComponent"></constructor-arg>
+	</bean>
+	<!-- 文件加载组件 bean -->
+	<bean id="fileLoadingComponent" class="com.xidu.framework.fileloading.service.impl.BaseFileLoadingComponentImpl"></bean>
+	
+</beans> 
